@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2014 The TeamEos Project
  * Copyright (C) 2016 The DirtyUnicorns Project
- * 
+ *
  * @author: Randall Rushing <randall.rushing@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -109,7 +109,7 @@ public class NavigationController implements PackageChangedListener {
 //            mTransparent = res.getColor(R.color.navigation_bar_background_transparent);
             mWarning = res.getColor(com.android.internal.R.color.battery_saver_mode_color);
             mGradient = res.getDrawable(R.drawable.nav_background);
-            mFlingLogo = res.getDrawable(R.drawable.ic_eos_fling);
+            mFlingLogo = res.getDrawable(R.drawable.ic_screwd_fling);
             mLightsOutLarge = res.getDrawable(R.drawable.ic_sysbar_lights_out_dot_large);
         }
 
@@ -122,7 +122,7 @@ public class NavigationController implements PackageChangedListener {
             Rect bounds = mGradient.getBounds();
             mGradient = res.getDrawable(R.drawable.nav_background);
             mGradient.setBounds(bounds);
-            mFlingLogo = res.getDrawable(R.drawable.ic_eos_fling);
+            mFlingLogo = res.getDrawable(R.drawable.ic_screwd_fling);
             mLightsOutLarge = res.getDrawable(R.drawable.ic_sysbar_lights_out_dot_large);
         }
     }
