@@ -95,7 +95,6 @@ public class SmartBarEditor extends BaseEditor implements View.OnTouchListener {
 
     public static final String BACK = ActionConstants.Smartbar.BUTTON1_TAG;
     public static final String HOME = ActionConstants.Smartbar.BUTTON2_TAG;
-    public static final String RECENTS = ActionConstants.Smartbar.BUTTON3_TAG;
 
     public static final int PHONE_MAX_BUTTONS = 7;
     public static final int TABLET_MAX_BUTTONS = 10;
@@ -326,8 +325,7 @@ public class SmartBarEditor extends BaseEditor implements View.OnTouchListener {
         if (mTapHasFocusTag == ActionConfig.PRIMARY) { // exclude single tap back, home, recent
             String[] exclude = {
                     ActionHandler.SYSTEMUI_TASK_BACK,
-                    ActionHandler.SYSTEMUI_TASK_HOME,
-                    ActionHandler.SYSTEMUI_TASK_RECENTS
+                    ActionHandler.SYSTEMUI_TASK_HOME
             };
             intent.putExtra("excluded_actions", exclude);
         }
@@ -586,9 +584,7 @@ public class SmartBarEditor extends BaseEditor implements View.OnTouchListener {
                 item = mTapMenuItems.get(i);
                 int id = item.getActionId();
                 if (id == MENU_MAP_ACTIONS_SINGLE_TAP &&
-                        (tag.equals(BACK)
-                                || tag.equals(HOME)
-                                || tag.equals(RECENTS))) {
+                        (tag.equals(BACK) || tag.equals(HOME))) {
                     continue;
                 }
                 popup.addActionItem(item);
@@ -610,9 +606,7 @@ public class SmartBarEditor extends BaseEditor implements View.OnTouchListener {
                     continue;
                 }
                 if (id == MENU_MAP_REMOVE &&
-                        (tag.equals(BACK)
-                                || tag.equals(HOME)
-                                || tag.equals(RECENTS))) {
+                        (tag.equals(BACK) || tag.equals(HOME))) {
                     continue;
                 }
                 popup.addActionItem(item);
