@@ -1,7 +1,7 @@
 /**
  * Copyright (C) 2014 The TeamEos Project
  * Copyright (C) 2016 The DirtyUnicorns Project
- * 
+ *
  * @author: Randall Rushing <randall.rushing@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -135,29 +135,29 @@ public class PulseRenderer implements Renderer {
     public void onStopAnimation(ColorAnimator colorAnimator, int lastColor) {
         setColor(mUserColor, true);
     }
-    
-    public void getcustomizations(Context ctx) {   
-        mFilledBlock = Settings.System.getIntForUser(
-                ctx.getContentResolver(), Settings.System.PULSE_FILLED_BLOCK_SIZE, 0,
+
+    public void getcustomizations(Context ctx) {
+        mFilledBlock = Settings.Secure.getIntForUser(
+                ctx.getContentResolver(), Settings.Secure.PULSE_FILLED_BLOCK_SIZE, 0,
                 UserHandle.USER_CURRENT);
-        mEmptyBlock = Settings.System.getIntForUser(
-                ctx.getContentResolver(), Settings.System.PULSE_EMPTY_BLOCK_SIZE, 0,
+        mEmptyBlock = Settings.Secure.getIntForUser(
+                ctx.getContentResolver(), Settings.Secure.PULSE_EMPTY_BLOCK_SIZE, 0,
                 UserHandle.USER_CURRENT);
-        mCustomDimen = Settings.System.getIntForUser(
-                ctx.getContentResolver(), Settings.System.PULSE_CUSTOM_DIMEN, 0,
+        mCustomDimen = Settings.Secure.getIntForUser(
+                ctx.getContentResolver(), Settings.Secure.PULSE_CUSTOM_DIMEN, 0,
                 UserHandle.USER_CURRENT);
-        mNumDivision = Settings.System.getIntForUser(
-                ctx.getContentResolver(), Settings.System.PULSE_CUSTOM_DIV, 0,
+        mNumDivision = Settings.Secure.getIntForUser(
+                ctx.getContentResolver(), Settings.Secure.PULSE_CUSTOM_DIV, 0,
                 UserHandle.USER_CURRENT);
-        mFudgeFactor = Settings.System.getIntForUser(
-                ctx.getContentResolver(), Settings.System.PULSE_CUSTOM_FUDGE_FACTOR, 0,
-                UserHandle.USER_CURRENT);        
+        mFudgeFactor = Settings.Secure.getIntForUser(
+                ctx.getContentResolver(), Settings.Secure.PULSE_CUSTOM_FUDGE_FACTOR, 0,
+                UserHandle.USER_CURRENT);
         if (mFilledBlock == 0) {
         mPathEffect1 = ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathEffect_1);
-        } 
+        }
         else if (mFilledBlock == 1) {
         mPathEffect1 = ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathEffect1_1);
-        } 
+        }
         else if (mFilledBlock == 2) {
         mPathEffect1 = ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathEffect2_1);
         }
@@ -178,16 +178,16 @@ public class PulseRenderer implements Renderer {
         }
         else if (mEmptyBlock  == 3) {
         mPathEffect2 = ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathEffect3_2);
-        }  
+        }
         else if (mEmptyBlock  == 4) {
         mPathEffect2 = ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathEffect4_2);
-        }     
+        }
         if (mCustomDimen == 0) {
         mPaint.setStrokeWidth(ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathStrokeWidth));
-        } 
+        }
         else if (mCustomDimen == 1) {
         mPaint.setStrokeWidth(ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathStrokeWidth1));
-        } 
+        }
         else if (mCustomDimen == 2) {
         mPaint.setStrokeWidth(ctx.getResources().getDimensionPixelSize(R.dimen.config_pulsePathStrokeWidth2));
         }
@@ -244,10 +244,10 @@ public class PulseRenderer implements Renderer {
         }
         if (mNumDivision == 0) {
         mDivisions = ctx.getResources().getInteger(R.integer.config_pulseDivisions);
-        } 
+        }
         else if (mNumDivision == 1) {
         mDivisions = ctx.getResources().getInteger(R.integer.config_pulseDivisions1);
-        } 
+        }
         else if (mNumDivision == 2) {
         mDivisions = ctx.getResources().getInteger(R.integer.config_pulseDivisions2);
         }
@@ -268,10 +268,10 @@ public class PulseRenderer implements Renderer {
         }
         else if (mNumDivision == 8) {
         mDivisions = ctx.getResources().getInteger(R.integer.config_pulseDivisions8);
-        }  
+        }
         if(mFudgeFactor == 0) {
         mDbFuzzFactor = ctx.getResources().getInteger(R.integer.config_pulseDbFuzzFactor);
-        } 
+        }
         else if (mFudgeFactor == 1) {
         mDbFuzzFactor = ctx.getResources().getInteger(R.integer.config_pulseDbFuzzFactor1);
         }
@@ -283,6 +283,6 @@ public class PulseRenderer implements Renderer {
         }
         else if (mFudgeFactor == 4) {
         mDbFuzzFactor = ctx.getResources().getInteger(R.integer.config_pulseDbFuzzFactor4);
-        } 
-     }                
+        }
+     }
 }
