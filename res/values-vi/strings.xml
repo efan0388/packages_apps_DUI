@@ -17,5 +17,49 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Bindable action labels -->
+  <string name="label_action_no_action">Không Hành động</string>
+  <string name="label_action_settings_panel">Bảng cài đặt nhanh</string>
+  <string name="label_action_notification_panel">Ngăn kéo thông báo</string>
+  <string name="label_action_screenshot">Chụp màn hình</string>
+  <string name="label_action_screenrecord">Ghi lại màn hình</string>
+  <string name="label_action_expanded_desktop">Mở rộng màn hình</string>
+  <string name="label_action_screen_off">Tắt màn hình</string>
+  <string name="label_action_force_close_app">Buộc đóng ứng dụng</string>
+  <string name="label_action_search_assistant">Trợ lý tìm kiếm</string>
+  <string name="label_action_google_now_on_tap">Google Now On Tap</string>
+  <string name="label_action_voice_search">Tìm kiếm bằng giọng nói</string>
+  <string name="label_action_in_app_search">Tìm kiếm trong ứng dụng</string>
+  <string name="label_action_flashlight">Đèn pin</string>
+  <string name="label_action_bluetooth">Bluetooth</string>
+  <string name="label_action_wifi">WiFi</string>
+  <string name="label_action_hotspot">Hotspot</string>
+  <string name="label_action_last_app">Ứ. dụng cuối vừa dùng</string>
+  <string name="label_action_overview">Gần đây</string>
+  <string name="label_action_power_menu">Trình đơn nguồn</string>
+  <string name="label_action_menu">Trình đơn</string>
+  <string name="label_action_back">Quay lại</string>
+  <string name="label_action_home">Màn hình trang chủ</string>
+  <string name="label_action_ime_switcher">Thay đổi bàn phím nhập liệu</string>
+  <string name="label_action_stop_screenpinning">Dừng màn hình đang ghim</string>
+  <string name="label_action_ime_down">Gõ con trỏ xuống</string>
+  <string name="label_action_ime_left">Gõ con trỏ trái</string>
+  <string name="label_action_ime_right">Gõ con trỏ phải</string>
+  <string name="label_action_ime_up">Gõ con trỏ lên</string>
   <!-- Smartbar -->
+  <string name="label_smartbar_actions">Các hành động</string>
+  <string name="label_smartbar_icon">Biểu tượng</string>
+  <string name="label_smartbar_add">Thêm</string>
+  <string name="label_smartbar_remove">Loại bỏ</string>
+  <string name="label_smartbar_cancel">Hủy bỏ</string>
+  <string name="label_smartbar_finish">Kết thúc</string>
+  <string name="label_smartbar_single_tap">Một nhấp</string>
+  <string name="label_smartbar_double_tap">Nhấp đúp</string>
+  <string name="label_smartbar_long_press">Nhấn giữ lâu</string>
+  <string name="label_smartbar_icon_pack">Gói biểu tượng</string>
+  <string name="label_smartbar_icon_gallery">Thư viện</string>
+  <string name="label_smartbar_icon_color">Màu sắc</string>
+  <string name="label_smartbar_icon_reset">Thiết lập lại</string>
+  <string name="smartbar_editor_toast_starting">Đang khởi động trình chỉnh sửa điều hướng</string>
+  <string name="smartbar_editor_toast_stopping">Đang dừng trình chỉnh sửa điều hướng</string>
+  <string name="smartbar_editor_toast_unavailable">Trình chỉnh sửa điều hướng không có sẵn</string>
 </resources>
