@@ -50,6 +50,8 @@
   <string name="label_action_clear_notifications">Pulisci notifiche</string>
   <string name="label_action_editing_smartbar">Smartbar editor</string>
   <string name="label_action_split_screen">Schermo diviso</string>
+  <string name="label_action_one_handed_mode_left">Modalità ad una sola mano (lato sinistro)</string>
+  <string name="label_action_one_handed_mode_right">Modalità ad una sola mano (lato destro)</string>
   <!-- Smartbar -->
   <string name="label_smartbar_actions">Azioni</string>
   <string name="label_smartbar_icon">Icona</string>
